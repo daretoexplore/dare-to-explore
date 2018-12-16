@@ -1,54 +1,53 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
-    min-height: 100vh;
+.content {
     width: 100%;
-    min-width: 100vh;
-    overflow-x: hidden;
+    background-color: #fff;
+    padding: 20px;
 }
 
-.intro {
+.content .carousel-item {
+    height: 93.5vh;
+}
+
+.content .intro .carousel-item .img-carousel {
     height: 100vh;
-    width: 100vw;
-    background: url('/assets/images/woman-sunset.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
-.intro .inner {
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .content-item {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: none;
 }
 
-.content {
-    max-width: 50rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.content h1 {
-    font-family: 'Roboto', sans-serif;
-    color: #f9f3f4;
-    text-shadow: 0px 0px 30px #000000;
-    font-size: 500%;
-}
-
-.logo {
+.carousel-fade .content-item .logo {
     display: flex;
     justify-content: center;
 }
 
-.btn {
+.carousel-fade .content-item .logo .btn {
     border-radius: 120px;
     height: 120px;
     width: 120px;
@@ -56,34 +55,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    tra
 }
 
-.btn:hover {
-    color: teal;
-    background-color: beige;
+.carousel-fade .content-item .logo .btn:hover {
+    color: #fff;
+    background-color: #282828;
 }
 
-p {
-    font-size: 160%;
-    line-height: 210%;
-    text-align: justify;
-    margin: 3%;
-    font-family: sans-serif;
+.content .navbar-left {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
-    .content h1 {
-        font-size: 250%;
-    }
+.content .navbar-left .item {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #fff;
+    height: 50px;
+    min-width: 50px;
+    padding: 0 25px;
+    text-decoration: none;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
 
-    .btn {
-        font-size: 110%;
-        padding: 7px 15px;
-    }
+.content .navbar-bottom {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
 
-    p {
-        font-size: 110%;
-        line-height: 160%;
-    }
+.content .navbar-bottom .item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #282828;
+    height: 50px;
+    min-width: 50px;
+    padding: 0 25px;
+    text-decoration: none;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
 }
