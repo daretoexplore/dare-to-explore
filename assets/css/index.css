@@ -1,11 +1,3 @@
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sana|Roboto');
-
-/*  Components */
-@import url("./components/header.css");
-
-
 html,
 body {
     margin: 0;
