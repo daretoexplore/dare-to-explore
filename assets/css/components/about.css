@@ -123,3 +123,15 @@ body {
   background-color: rgb(71, 159, 252);
   border: 1px solid rgb(25, 136, 255);
 }
+
+.main .banner {
+  background-image: url("/assets/images/travel-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  height: 400px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
