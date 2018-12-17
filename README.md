@@ -6,7 +6,6 @@ Rina came out with the idea of travel blog and got inspired by www.letstravelsom
 
 <p align="center">
   <img src="./assets/images/screeenshot.png" width="350" title="hover text">
-  <img src="./assets/images/screeenshot.png" width="350" alt="accessibility text">
 </p>
 
-I hope you enjoy it.
+We hope you enjoy it.
